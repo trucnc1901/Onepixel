@@ -126,7 +126,7 @@
 
                             if (itemsNext.length === 0) {
 
-                                t.loadMore.text('NO MORE ENTRIES');
+                                t.loadMore.text('LOADING...');
                                 t.loadMore.addClass('cbp-l-loadMore-text-stop');
 
                                 t.window.off("scroll.loadMoreObject");

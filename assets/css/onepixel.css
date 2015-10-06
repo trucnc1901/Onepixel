@@ -35,15 +35,49 @@ html, body {
   min-height: 100%; }
 
 body {
-  padding-top: 80px; }
+  padding-top: 70px; }
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: transparent; }
+  .navbar .navbar-nav li a {
+    font-family: brandon-bold;
+    text-transform: uppercase;
+    color: #393939;
+    font-size: 14px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none; }
+  .navbar .navbar-nav li a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #fd740c;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    margin: 0px auto;
+    padding-top: 5px; }
+  .navbar .navbar-nav li.active a {
+    color: #fd740c;
+    background-color: transparent; }
+  .navbar .navbar-nav li:hover a:after {
+    width: 50%;
+    background-color: transparent; }
 
 .header .logo {
   margin: 0px auto;
   text-align: center;
   padding: 10px 0px; }
   .header .logo img {
-    width: 50%;
+    width: 60%;
     height: auto; }
+
+.slider {
+  margin-top: 10px; }
+
+#content {
+  margin-top: -10px; }
 
 .section .title h1 {
   font-size: 48px;
@@ -100,12 +134,33 @@ body {
 .teamwork {
   background: url("../img/teamwork-bg.jpg") 50% 100% repeat fixed;
   position: relative;
-  height: 625px; }
+  height: auto;
+  padding-bottom: 70px; }
   .teamwork .teamwork-content {
-    position: absolute;
-    top: 50%;
-    transform: translateX(0%) translateY(-50%);
-    -webkit-transform: translateX(0%) translateY(-50%); }
+    padding-top: 70px; }
+    .teamwork .teamwork-content .teamwork-contact {
+      padding: 0px;
+      list-style: none;
+      margin-top: 30px; }
+      .teamwork .teamwork-content .teamwork-contact li {
+        float: left;
+        padding-right: 15px; }
+        .teamwork .teamwork-content .teamwork-contact li a {
+          color: #fff;
+          -webkit-transition: all .25s ease-in;
+          -moz-transition: all .25s ease-in;
+          -ms-transition: all .25s ease-in;
+          -o-transition: all .25s ease-in;
+          transition: all .25s ease-in; }
+          .teamwork .teamwork-content .teamwork-contact li a .fa {
+            width: 55px;
+            height: 55px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 50%;
+            border: 3px solid #fff; }
+          .teamwork .teamwork-content .teamwork-contact li a:hover {
+            color: #f8720c; }
     .teamwork .teamwork-content .title h1 {
       color: #fff; }
     .teamwork .teamwork-content .title p {
@@ -126,6 +181,14 @@ body {
       margin: 0 auto;
       text-align: center; }
 
+.arrow-down-aboutus {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin: 0 auto;
+  border-top: 20px solid #F6F5F5; }
+
 .arrow-down {
   width: 0;
   height: 0;
@@ -134,12 +197,18 @@ body {
   margin: 0 auto;
   border-top: 20px solid #fff; }
 
+.portfolio_bg {
+  background-image: url("../img/portfolio_bg.jpg");
+  margin: 0 auto;
+  position: relative;
+  z-index: 9999; }
+
 .contact {
   background: url("../img/contact_bg.jpg") 50% 100% repeat fixed;
-  position: relative; }
+  position: relative;
+  padding-bottom: 70px; }
   .contact .contact-content {
-    margin-top: 100px;
-    margin-: 100px; }
+    padding: 70px 0px; }
     @media screen and (max-width: 991px) {
       .contact .contact-content .contact-form {
         margin-bottom: 50px; }
@@ -196,5 +265,43 @@ body {
       font-size: 11px;
       color: #ddd;
       text-align: center; }
+
+.cbp-item-wrapper {
+  border: 5px solid #fff; }
+
+.cbp-l-loadMore-text {
+  padding: 20px 0px;
+  color: #fff;
+  border: 1px solid #fff; }
+
+.cbp-1-grid-masonry .cbp-item {
+  width: 277px;
+  margin: 10px; }
+
+.cbp-1-grid-masonry .cbp-1-grid-masonry-height1 {
+  width: 267px; }
+
+.cbp-1-grid-masonry .cbp-1-grid-masonry-height2 {
+  width: 415px; }
+
+.custom2 .owl-item img {
+  width: auto !important; }
+
+.custom2 .owl-nav {
+  display: none; }
+  .custom2 .owl-nav .owl-next {
+    right: -10% !important; }
+  .custom2 .owl-nav .owl-prev {
+    left: -10% !important; }
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 0px; }
+
+  .navbar-fixed-top {
+    position: relative; }
+
+  .navbar-nav {
+    float: none !important; } }
 
 /*# sourceMappingURL=onepixel.css.map */

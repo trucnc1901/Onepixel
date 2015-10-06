@@ -8,7 +8,7 @@
  $(document).ready(function() {
   var owl = $('#brand-carousel');
   owl.owlCarousel({
-    margin: 10,
+   
     nav: true,
     loop: true,
     autoplay:true,
@@ -37,6 +37,25 @@
       autoplayTimeout:4000,
       autoplayHoverPause:true,
       nav: true,
+      loop:true,
+      navText:[
+      "<i class='fa fa-2x fa-angle-left'></i>",
+      "<i class='fa fa-2x fa-angle-right'></i>"
+      ],
+      items: 1,
+      smartSpeed: 450
+
+    });
+     $('.custom2').owlCarousel({
+      animateIn: 'lightSpeedIn',
+      animateOut: 'lightSpeedOut',
+      responsiveClass:true,
+      responsiveRefreshRate : 200,
+      responsiveBaseElement: window,
+      autoplayTimeout:4000,
+      autoplay:true,
+      autoplayHoverPause:true,
+      nav: false,
       loop:true,
       navText:[
       "<i class='fa fa-2x fa-angle-left'></i>",
