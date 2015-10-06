@@ -1,0 +1,133 @@
+/*Carousel*/
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+
+
+.slide{
+	background-position: center center;
+	background-size: auto 100%;
+	height: 45rem;
+}
+
+.slide-1{
+  background-image: url('../img/banner/slide-tls-1.jpg');
+  background-repeat: no-repeat;
+}
+.slide-2 {
+  background-image: url('../img/banner/slide-tls.jpg');
+  background-repeat: no-repeat;
+}
+@media screen and(max-width: 767px) {
+	.slide{
+	background-size: auto 60%!important;
+	height: 30rem!important;
+	}
+}
+
+
+
+
+
+
+
+
+.caption .btn-customize{
+	background-color: #f47929;
+	border:1px solid #f47929;
+	border-radius: 0px;
+	color: #fff;
+	font-size: 24px;
+	height: 40px;
+	width: 170px;
+	text-transform: uppercase;
+	margin:15px 0;
+
+}
+.caption .btn-customize:hover{
+	background: #f47929;
+	border: 1px solid #f47929;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+
+.carousel-inner .container{
+	height: 100%;
+	display: table;
+}
+.caption{
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: 300;
+	padding: 0 15px; 
+	color: #fff;
+	overflow: auto;
+}
+
+.caption img{
+	margin-top: 20px;
+}
+
+/*.slide-1{
+	background: url(../images/slide/slide-tls-1.jpg) no-repeat;
+	
+}
+.slide-2{
+	background: url(../images/slide/slide-tls.jpg) no-repeat;
+}*/
+.owl-theme .owl-dots{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next{
+	position: absolute;
+	top: 50%;
+	transform: translateX(0%) translateY(-50%);
+	-webkit-transform: translateX(0%) translateY(-50%);;
+}
+.owl-theme .owl-nav .owl-prev{
+	left: 10%
+}
+.owl-theme .owl-nav .owl-next{
+	right: 10%;
+}
+.fa-angle-left,
+.fa-angle-right{
+	display: inline-block;
+	font-weight: 300;
+	z-index: 5;
+	display: inline-block;
+
+	font-size: 40px!important;
+}
